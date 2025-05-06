@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 
 export const HeaderComponent = () => {
   const navigate = useNavigate();
@@ -16,7 +16,8 @@ export const HeaderComponent = () => {
   return (
     <header className='flex justify-around items-center h-25'>
       <h1 className='text-6xl font-bold text-primary'>
-        Hanner.
+        <Link to='/'>Hanner.</Link>
+        
       </h1>
 
       <button
