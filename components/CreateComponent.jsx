@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { HeaderComponent } from "./HeaderComponent";
 
 const CreateComponent = () => {
   const navigate = useNavigate();
@@ -50,7 +51,9 @@ const CreateComponent = () => {
   };
 
   return (
-    <div className="m-40 p-10 bg-amber-50">
+    <>
+    <HeaderComponent></HeaderComponent>
+    <div className=" p-10">
       <form className="max-w-md mx-auto" onSubmit={handleSubmit}>
         <div className="relative z-0 w-full mb-5 group">
           <input
@@ -216,6 +219,7 @@ const CreateComponent = () => {
         </button>
       </form>
     </div>
+    </>
   );
 };
 

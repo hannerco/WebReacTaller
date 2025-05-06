@@ -7,7 +7,7 @@ const MainPage = () => {
     <>
     <HeaderComponent></HeaderComponent>
     <TableComponent></TableComponent>
-      <div>MainPage</div> 
+    
     
     </>
   )
